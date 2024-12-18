@@ -1,10 +1,3 @@
-"""
-Model Methods
-Train and Evaluate Model Implementation.
-Copyright (c) 2018 Prabhsimran Singh
-Licensed under the MIT License (see LICENSE for details)
-Written by Prabhsimran Singh
-"""
 import os
 import logging
 

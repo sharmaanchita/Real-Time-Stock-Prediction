@@ -1,8 +1,3 @@
-'''
-Class adopted from 
-https://github.com/LuEE-C/NoisyDenseKeras
-'''
-
 from keras import backend as K
 from keras.engine.topology import Layer
 from keras import activations, initializers, regularizers, constraints
