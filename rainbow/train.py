@@ -1,3 +1,28 @@
+"""
+Script for training Stock Trading Bot.
+
+Usage:
+  train.py <train-stock> <val-stock> [--strategy=<strategy>]
+    [--window-size=<window-size>] [--batch-size=<batch-size>]
+    [--episode-count=<episode-count>] [--model-name=<model-name>]
+    [--pretrained] [--debug]
+
+Options:
+  --strategy=<strategy>             Q-learning strategy to use for training the network. Options:
+                                      `dqn` i.e. Vanilla DQN,
+                                      `t-dqn` i.e. DQN with fixed target distribution,
+                                      `double-dqn` i.e. DQN with separate network for value estimation. [default: t-dqn]
+  --window-size=<window-size>       Size of the n-day window stock data representation
+                                    used as the feature vector. [default: 10]
+  --batch-size=<batch-size>         Number of samples to train on in one mini-batch
+                                    during training. [default: 32]
+  --episode-count=<episode-count>   Number of trading episodes to use for training. [default: 50]
+  --model-name=<model-name>         Name of the pretrained model to use. [default: model_debug]
+  --pretrained                      Specifies whether to continue training a previously
+                                    trained model (reads `model-name`).
+  --debug                           Specifies whether to use verbose logs during eval operation.
+"""
+
 import logging
 import coloredlogs
 import matplotlib.pyplot as plt
